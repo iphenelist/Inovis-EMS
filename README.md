@@ -2,6 +2,9 @@
 
 Inovis EMS is a standalone Frappe custom app for energy monitoring, control, reporting, and ERPNext integration.
 
+<img width="840" height="794" alt="image" src="https://github.com/user-attachments/assets/005662b3-6fa7-45e7-9f1c-bd49fa5952fb" />
+
+
 ## Current Scope
 
 The first implementation includes:
