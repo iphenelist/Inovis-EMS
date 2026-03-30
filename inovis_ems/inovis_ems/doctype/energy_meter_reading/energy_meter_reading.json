@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:EMS-RDG-{YYYY}-{#####}",
+ "creation": "2026-03-30 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "energy_site",
+  "energy_meter",
+  "ingestion_source",
+  "external_reference",
+  "reading_datetime",
+  "section_break_reading",
+  "reading_frequency",
+  "reading_source",
+  "column_break_technical",
+  "purchase_invoice",
+  "project",
+  "section_break_values",
+  "opening_reading",
+  "closing_reading",
+  "multiplier",
+  "column_break_totals",
+  "consumption",
+  "unit",
+  "rate",
+  "energy_cost",
+  "section_break_quality",
+  "peak_demand",
+  "power_factor",
+  "carbon_emission_factor",
+  "carbon_emission_kg",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "energy_site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Energy Site",
+   "options": "Energy Site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "energy_meter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Energy Meter",
+   "options": "Energy Meter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ingestion_source",
+   "fieldtype": "Link",
+   "label": "Ingestion Source",
+   "options": "Energy Data Source"
+  },
+  {
+   "fieldname": "external_reference",
+   "fieldtype": "Data",
+   "label": "External Reference"
+  },
+  {
+   "fieldname": "reading_datetime",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Reading Datetime",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_reading",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Daily",
+   "fieldname": "reading_frequency",
+   "fieldtype": "Select",
+   "label": "Reading Frequency",
+   "options": "Hourly\nDaily\nWeekly\nMonthly",
+   "reqd": 1
+  },
+  {
+   "default": "Manual",
+   "fieldname": "reading_source",
+   "fieldtype": "Select",
+   "label": "Reading Source",
+   "options": "Manual\nIoT\nAPI\nImported\nBMS\nUtility Bill",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_technical",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "section_break_values",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "opening_reading",
+   "fieldtype": "Float",
+   "label": "Opening Reading"
+  },
+  {
+   "fieldname": "closing_reading",
+   "fieldtype": "Float",
+   "label": "Closing Reading",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "multiplier",
+   "fieldtype": "Float",
+   "label": "Multiplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_totals",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "label": "Consumption",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "energy_cost",
+   "fieldtype": "Currency",
+   "label": "Energy Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_quality",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "peak_demand",
+   "fieldtype": "Float",
+   "label": "Peak Demand"
+  },
+  {
+   "fieldname": "power_factor",
+   "fieldtype": "Float",
+   "label": "Power Factor"
+  },
+  {
+   "fieldname": "carbon_emission_factor",
+   "fieldtype": "Float",
+   "label": "Carbon Emission Factor"
+  },
+  {
+   "fieldname": "carbon_emission_kg",
+   "fieldtype": "Float",
+   "label": "Carbon Emission (kgCO2e)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Inovis EMS",
+ "name": "Energy Meter Reading",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Analyst",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "energy_meter,energy_site,company,external_reference",
+ "sort_field": "reading_datetime",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "energy_meter",
+ "track_changes": 1
+}

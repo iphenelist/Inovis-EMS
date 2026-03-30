@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:EMS-ALT-{YYYY}-{#####}",
+ "creation": "2026-03-30 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "alert_title",
+  "status",
+  "severity",
+  "event_datetime",
+  "section_break_context",
+  "company",
+  "energy_site",
+  "energy_meter",
+  "energy_alert_rule",
+  "energy_meter_reading",
+  "section_break_metrics",
+  "metric",
+  "metric_value",
+  "threshold_value",
+  "variance_percent",
+  "resolved_on",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "alert_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alert Title",
+   "reqd": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nAcknowledged\nClosed",
+   "reqd": 1
+  },
+  {
+   "default": "Medium",
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Severity",
+   "options": "Low\nMedium\nHigh\nCritical",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event_datetime",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Event Datetime",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_context",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "energy_site",
+   "fieldtype": "Link",
+   "label": "Energy Site",
+   "options": "Energy Site"
+  },
+  {
+   "fieldname": "energy_meter",
+   "fieldtype": "Link",
+   "label": "Energy Meter",
+   "options": "Energy Meter"
+  },
+  {
+   "fieldname": "energy_alert_rule",
+   "fieldtype": "Link",
+   "label": "Energy Alert Rule",
+   "options": "Energy Alert Rule"
+  },
+  {
+   "fieldname": "energy_meter_reading",
+   "fieldtype": "Link",
+   "label": "Energy Meter Reading",
+   "options": "Energy Meter Reading"
+  },
+  {
+   "fieldname": "section_break_metrics",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "metric",
+   "fieldtype": "Data",
+   "label": "Metric"
+  },
+  {
+   "fieldname": "metric_value",
+   "fieldtype": "Float",
+   "label": "Metric Value"
+  },
+  {
+   "fieldname": "threshold_value",
+   "fieldtype": "Float",
+   "label": "Threshold Value"
+  },
+  {
+   "fieldname": "variance_percent",
+   "fieldtype": "Percent",
+   "label": "Variance Percent"
+  },
+  {
+   "fieldname": "resolved_on",
+   "fieldtype": "Datetime",
+   "label": "Resolved On"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Inovis EMS",
+ "name": "Energy Alert",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Analyst",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "alert_title,energy_meter,energy_site,metric",
+ "sort_field": "event_datetime",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "alert_title",
+ "track_changes": 1
+}

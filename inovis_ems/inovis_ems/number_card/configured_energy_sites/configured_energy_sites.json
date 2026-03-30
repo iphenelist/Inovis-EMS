@@ -1,0 +1,15 @@
+{
+ "doctype": "Number Card",
+ "filters_json": "null",
+ "function": "Count",
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Configured Sites",
+ "method": "inovis_ems.inovis_ems.number_card.configured_energy_sites.configured_energy_sites.get",
+ "module": "Inovis EMS",
+ "name": "Configured Energy Sites",
+ "report_function": "Sum",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Monthly",
+ "type": "Custom"
+}

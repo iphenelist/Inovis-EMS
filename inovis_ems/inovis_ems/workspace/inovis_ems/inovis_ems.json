@@ -1,0 +1,370 @@
+{
+ "charts": [
+  {
+   "chart_name": "Monthly Energy Consumption",
+   "label": "Monthly Energy Consumption"
+  },
+  {
+   "chart_name": "Energy Cost by Site",
+   "label": "Energy Cost by Site"
+  }
+ ],
+ "content": "[{\"id\":\"ems-header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Inovis EMS Control Center</b></span>\",\"col\":12}},{\"id\":\"ems-kpi-1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Configured Energy Sites\",\"col\":4}},{\"id\":\"ems-kpi-2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Energy Meters\",\"col\":4}},{\"id\":\"ems-kpi-3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Readings This Month\",\"col\":3}},{\"id\":\"ems-kpi-5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Energy Alerts\",\"col\":4}},{\"id\":\"ems-kpi-6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Performance Targets\",\"col\":4}},{\"id\":\"ems-kpi-4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Energy Cost This Month\",\"col\":3}},{\"id\":\"ems-spacer-1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ems-chart-1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Monthly Energy Consumption\",\"col\":6}},{\"id\":\"ems-chart-2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Energy Cost by Site\",\"col\":6}},{\"id\":\"ems-spacer-2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"yOBMGgLzKJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":4}},{\"id\":\"rz38M3Z8ZS\",\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}},{\"id\":\"nLRrOSPl0K\",\"type\":\"card\",\"data\":{\"card_name\":\"Alerts & Controls\",\"col\":4}},{\"id\":\"TTSUzOJues\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2026-03-30 00:00:00",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "integration",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Inovis EMS",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Settings",
+   "link_count": 0,
+   "link_to": "Energy Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Site",
+   "link_count": 0,
+   "link_to": "Energy Site",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Meter",
+   "link_count": 0,
+   "link_to": "Energy Meter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Performance Target",
+   "link_count": 0,
+   "link_to": "Energy Performance Target",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Meter Reading",
+   "link_count": 0,
+   "link_to": "Energy Meter Reading",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Data Source",
+   "link_count": 0,
+   "link_to": "Energy Data Source",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset",
+   "link_count": 0,
+   "link_to": "Asset",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Alert Rule",
+   "link_count": 0,
+   "link_to": "Energy Alert Rule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Alert",
+   "link_count": 0,
+   "link_to": "Energy Alert",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Energy Consumption Overview",
+   "link_count": 0,
+   "link_to": "Energy Consumption Overview",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Energy Purchase Invoice Summary",
+   "link_count": 0,
+   "link_to": "Energy Purchase Invoice Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Purchase Register",
+   "link_count": 0,
+   "link_to": "Purchase Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Settings",
+   "link_count": 0,
+   "link_to": "Energy Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Site",
+   "link_count": 0,
+   "link_to": "Energy Site",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Meter",
+   "link_count": 0,
+   "link_to": "Energy Meter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Performance Target",
+   "link_count": 0,
+   "link_to": "Energy Performance Target",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transactions",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Meter Reading",
+   "link_count": 0,
+   "link_to": "Energy Meter Reading",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Data Source",
+   "link_count": 0,
+   "link_to": "Energy Data Source",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset",
+   "link_count": 0,
+   "link_to": "Asset",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alerts & Controls",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Alert Rule",
+   "link_count": 0,
+   "link_to": "Energy Alert Rule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Alert",
+   "link_count": 0,
+   "link_to": "Energy Alert",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Energy Consumption Overview",
+   "link_count": 0,
+   "link_to": "Energy Consumption Overview",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Energy Purchase Invoice Summary",
+   "link_count": 0,
+   "link_to": "Energy Purchase Invoice Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Purchase Invoice",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Register",
+   "link_count": 0,
+   "link_to": "Purchase Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Purchase Invoice",
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-31 00:14:17.679502",
+ "modified_by": "Administrator",
+ "module": "Inovis EMS",
+ "name": "Inovis EMS",
+ "number_cards": [
+  {
+   "label": "Configured Energy Sites",
+   "number_card_name": "Configured Energy Sites"
+  },
+  {
+   "label": "Active Energy Meters",
+   "number_card_name": "Active Energy Meters"
+  },
+  {
+   "label": "Readings This Month",
+   "number_card_name": "Readings This Month"
+  },
+  {
+   "label": "Energy Cost This Month",
+   "number_card_name": "Energy Cost This Month"
+  },
+  {
+   "label": "Open Energy Alerts",
+   "number_card_name": "Open Energy Alerts"
+  },
+  {
+   "label": "Active Performance Targets",
+   "number_card_name": "Active Performance Targets"
+  }
+ ],
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Energy Manager"
+  },
+  {
+   "role": "Energy Analyst"
+  }
+ ],
+ "sequence_id": 50.0,
+ "shortcuts": [],
+ "title": "Inovis EMS"
+}

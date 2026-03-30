@@ -1,0 +1,15 @@
+{
+ "doctype": "Number Card",
+ "filters_json": "null",
+ "function": "Count",
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Active Targets",
+ "method": "inovis_ems.inovis_ems.number_card.active_performance_targets.active_performance_targets.get",
+ "module": "Inovis EMS",
+ "name": "Active Performance Targets",
+ "report_function": "Sum",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Monthly",
+ "type": "Custom"
+}

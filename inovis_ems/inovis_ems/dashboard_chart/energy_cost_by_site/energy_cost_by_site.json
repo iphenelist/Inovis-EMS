@@ -1,0 +1,39 @@
+{
+ "chart_name": "Energy Cost by Site",
+ "chart_type": "Custom",
+ "color": "#23b028",
+ "creation": "2026-03-30 00:00:00",
+ "currency": "TZS",
+ "custom_options": "{\"axisOptions\": {\"shortenYAxisNumbers\": 1}}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2026-03-30 23:08:16.299898",
+ "modified": "2026-03-30 23:08:54.143541",
+ "modified_by": "Administrator",
+ "module": "Inovis EMS",
+ "name": "Energy Cost by Site",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Energy Manager"
+  },
+  {
+   "role": "Energy Analyst"
+  }
+ ],
+ "show_values_over_chart": 0,
+ "source": "Energy Cost by Site",
+ "timeseries": 0,
+ "type": "Bar",
+ "use_report_chart": 0,
+ "y_axis": []
+}

@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:rule_name",
+ "creation": "2026-03-30 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rule_name",
+  "company",
+  "energy_site",
+  "energy_meter",
+  "section_break_rule",
+  "metric",
+  "rule_type",
+  "comparison",
+  "threshold_value",
+  "column_break_rule",
+  "lookback_readings",
+  "severity",
+  "notify_role",
+  "is_enabled",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "energy_site",
+   "fieldtype": "Link",
+   "label": "Energy Site",
+   "options": "Energy Site"
+  },
+  {
+   "fieldname": "energy_meter",
+   "fieldtype": "Link",
+   "label": "Energy Meter",
+   "options": "Energy Meter"
+  },
+  {
+   "fieldname": "section_break_rule",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Consumption",
+   "fieldname": "metric",
+   "fieldtype": "Select",
+   "label": "Metric",
+   "options": "Consumption\nCost\nPeak Demand\nCarbon Emission\nPower Factor",
+   "reqd": 1
+  },
+  {
+   "default": "Static Threshold",
+   "fieldname": "rule_type",
+   "fieldtype": "Select",
+   "label": "Rule Type",
+   "options": "Static Threshold\nPercentage Variance",
+   "reqd": 1
+  },
+  {
+   "default": "Above",
+   "fieldname": "comparison",
+   "fieldtype": "Select",
+   "label": "Comparison",
+   "options": "Above\nBelow",
+   "reqd": 1
+  },
+  {
+   "fieldname": "threshold_value",
+   "fieldtype": "Float",
+   "label": "Threshold Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rule",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "3",
+   "fieldname": "lookback_readings",
+   "fieldtype": "Int",
+   "label": "Lookback Readings"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "options": "Low\nMedium\nHigh\nCritical",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notify_role",
+   "fieldtype": "Link",
+   "label": "Notify Role",
+   "options": "Role"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_enabled",
+   "fieldtype": "Check",
+   "label": "Is Enabled"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Inovis EMS",
+ "name": "Energy Alert Rule",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Analyst",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "rule_name,company,energy_site,energy_meter",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rule_name",
+ "track_changes": 1
+}

@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:meter_name",
+ "creation": "2026-03-30 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meter_name",
+  "company",
+  "energy_site",
+  "section_break_profile",
+  "meter_category",
+  "energy_source",
+  "unit",
+  "column_break_configuration",
+  "default_rate",
+  "multiplier",
+  "is_active",
+  "section_break_integration",
+  "asset",
+  "linked_warehouse",
+  "column_break_identity",
+  "serial_number",
+  "manufacturer",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "meter_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Meter Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "energy_site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Energy Site",
+   "options": "Energy Site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_profile",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Grid",
+   "fieldname": "meter_category",
+   "fieldtype": "Select",
+   "label": "Meter Category",
+   "options": "Grid\nSolar\nGenerator\nBattery\nHVAC\nWater\nGas\nSteam\nCompressed Air\nProduction Line\nOther"
+  },
+  {
+   "default": "Electricity",
+   "fieldname": "energy_source",
+   "fieldtype": "Select",
+   "label": "Energy Source",
+   "options": "Electricity\nSolar\nDiesel\nGas\nWater\nSteam\nCompressed Air\nOther",
+   "reqd": 1
+  },
+  {
+   "default": "kWh",
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "label": "Unit",
+   "options": "kWh\nkW\nL\nm3\nNm3\nkg\nton\nBTU",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_configuration",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_rate",
+   "fieldtype": "Currency",
+   "label": "Default Rate"
+  },
+  {
+   "default": "1",
+   "fieldname": "multiplier",
+   "fieldtype": "Float",
+   "label": "Multiplier"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "section_break_integration",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "label": "Linked Asset",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "linked_warehouse",
+   "fieldtype": "Link",
+   "label": "Linked Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_identity",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Inovis EMS",
+ "name": "Energy Meter",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Energy Analyst",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "meter_name,serial_number,energy_site",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "meter_name",
+ "track_changes": 1
+}
