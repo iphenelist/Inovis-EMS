@@ -1,8 +1,8 @@
 app_name = "inovis_ems"
 app_title = "Inovis EMS"
-app_publisher = "Inovis Energy, Inc."
-app_description = "Energy Management System (EMS) for Inovis Energy, Inc."
-app_email = "engineering@inovis.energy"
+app_publisher = "Innocent Phenelist Metumba"
+app_description = "Energy Management System (EMS)"
+app_email = "innocentphenelist@gmail.com"
 app_license = "mit"
 
 # Apps
